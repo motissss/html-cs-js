@@ -15,7 +15,14 @@
   </head>
 
   <body>
+    <button id="printBtn">Izvadīt skaitļus</button>
+
     <script src="app.js"></script>
+    <script>
+      document
+        .getElementById("printBtn")
+        .addEventListener("click", printNumbers);
+    </script>
     <div>
       <h2>Boom</h2>
       <p>My name is Matiss</p>
