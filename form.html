@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+<h1>Atsauksmes forma</h1>
+
+    <form action="/submit" method="post">
+        <label for="email">E-pasts:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="vards">Vārds:</label><br>
+        <input type="text" id="vards" name="vards" required><br><br>
+
+        <label for="limenis">Līmenis:</label><br>
+        <select id="limenis" name="limenis" required>
+            <option value="">--Izvēlies līmeni--</option>
+            <option value="iesacejs">Iesācējs</option>
+            <option value="vidējs">Vidējs</option>
+            <option value="advancēts">Advancēts</option>
+        </select><br><br>
+
+        <label for="atsauksme">Atsauksme:</label><br>
+        <textarea id="atsauksme" name="atsauksme" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Iesniegt">
+    </form>
+
+</body>
+
+</html>
