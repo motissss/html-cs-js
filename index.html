@@ -16,9 +16,12 @@
 
   <body>
     <button id="printBtn">Izvadīt skaitļus</button>
-
+    <button id="printName">Mans Vārds</button>
     <script src="app.js"></script>
     <script>
+      document
+      .getElementById("printName")
+      .addEventListener("click", printName);
       document
         .getElementById("printBtn")
         .addEventListener("click", printNumbers);

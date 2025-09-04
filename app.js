@@ -8,3 +8,6 @@ function printNumbers() {
 window.onload = function () {
     printNumbers();
 };
+console.log("New");
+function printName() {
+}

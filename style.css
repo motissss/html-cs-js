@@ -1,3 +1,29 @@
 body {
     background-color: rgb(140, 197, 216)
 }
+
+body {
+    background-color: brown;
+}
+
+h1,
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+form {
+    width: 800px;
+    margin: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+#the-heading {
+    color: rgb(0, 255, 21);
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}

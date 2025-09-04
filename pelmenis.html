@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Box Model Vizualizācija ar Izmēriem</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        color: #b22222;
+      }
+
+      /* Wrapper, lai margin būtu redzams ārpusē */
+      .wrapper {
+        display: inline-block;
+        background-color: #cce5ff; /* Margin apgabals (gaiši zils) */
+        padding: 30px; /* Šeit margin ir 30px, attēlots kā iekšējā atstarpe wrapper */
+        margin: 50px auto;
+        position: relative;
+      }
+
+      /* Oranžs border ap padding un content */
+      .border-box {
+        border: 8px solid #ffa500;
+        display: inline-block;
+        box-sizing: content-box;
+      }
+
+      /* Zaļš padding ap content */
+      .padding-box {
+        background-color: #90ee90;
+        padding: 20px;
+        display: inline-block;
+      }
+
+      /* Zils content laukums ar fiksētu izmēru */
+      .content-box {
+        background-color: #add8e6;
+        width: 200px;
+        height: 150px;
+        line-height: 150px;
+        font-weight: bold;
+        color: #222;
+      }
+
+      /* Tekstu etiķetes */
+      .label {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      /* Apzīmējumi ar pozīciju un krāsu */
+      .tag {
+        position: absolute;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 3px 8px;
+        border-radius: 4px;
+        color: #333;
+      }
+
+      /* Margin tag ap wrapper */
+      .margin-tag {
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #004085;
+      }
+
+      /* Border tag */
+      .border-tag {
+        top: 10px;
+        right: 10px;
+        color: #d35400;
+      }
+
+      /* Padding tag */
+      .padding-tag {
+        top: 10px;
+        left: 10px;
+        color: #2e7d32;
+      }
+
+      /* Content tag */
+      .content-tag {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #1a237e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box Model Vizualizācija ar Izmēriem</h1>
+
+    <div class="wrapper">
+      <div class="tag margin-tag">Margin: 30px</div>
+
+      <div class="border-box">
+        <div class="tag border-tag">Border: 8px</div>
+
+        <div class="padding-box">
+          <div class="tag padding-tag">Padding: 20px</div>
+
+          <div class="content-box">
+            <div class="tag content-tag">Content: 200x150 px</div>
+            Saturs
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="label">
+      Elementam ir content izmērs 200x150 px.<br />
+      Ap saturu 20px padding, ap to 8px border un ārpusē 30px margin (attēlots
+      ar gaiši zilu fonu).
+    </div>
+  </body>
+</html>
